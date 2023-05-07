@@ -1,7 +1,7 @@
-import { createContest, useReducer } from 'react'
+import { createContext, useReducer } from 'react'
 import alertReducer from './AlertReducer'
 
-const AlertContext = createContest()
+const AlertContext = createContext()
 
 export const AlertProvider = ({ children }) => {
   const initialState = {
